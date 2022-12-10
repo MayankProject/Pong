@@ -35,7 +35,18 @@ canvas {
 .props.show{
   right: 0vw;
 }
+.props ul{
+  padding: 0;
+}
+.props ul li{
+  list-style: none;
+  color: blue;
+  margin: 10px 0px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
 .form{
+  z-index: 1;
   width: 500px;
   background: rgb(32, 32, 55);
   padding:30px;
