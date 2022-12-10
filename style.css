@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+canvas {
+  border-right:1px solid red ;
+  border-left:1px solid red ;
+  display: block;
+}
+.gear{
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  top: 20px;
+  fill: white;
+  cursor: pointer;
+}
+.props{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  right: 100vw;
+}
+.props.show{
+  right: 0vw;
+}
+.form{
+  width: 500px;
+  background: rgb(32, 32, 55);
+  padding:30px;
+}
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+}
+.input-container p{
+  color: red;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-container input{
+  outline: none;
+  height: 100%;
+  background: none;
+  color: blue;
+  border: 5px solid rgb(28, 34, 76);
+  padding: 10px;
+}
+.paddleScoreContainer{
+  color: blue;
+  position: absolute;
+  top: 50%;
+  font-size: 5vw;
+  display: flex;
+  font-family: 'Poppins', sans-serif; 
+}
+.paddleScoreContainer1{
+  left: 6%;
+}
+.paddleScoreContainer2{
+  right: 6%;
+}
+.miss{
+  color: red !important;
+}
